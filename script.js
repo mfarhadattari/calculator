@@ -5,7 +5,8 @@ document.getElementById("light-btn").addEventListener("click", function () {
   document.getElementById('screen').style.backgroundColor = '#0F172A'
   const calBtns = document.getElementsByClassName('cal-btn') ;
   for (const calBtn of calBtns){
-    calBtn.style.backgroundColor = '#0F172A'
+    calBtn.classList.remove('bg-red-700')
+    calBtn.classList.add('bg-slate-900') ;
   }
 });
 
@@ -16,7 +17,8 @@ document.getElementById("dark-btn").addEventListener("click", function () {
     document.getElementById('screen').style.backgroundColor = 'white'
     const calBtns = document.getElementsByClassName('cal-btn') ;
     for (const calBtn of calBtns){
-      calBtn.style.backgroundColor = '#B91C1C'
+      calBtn.classList.remove('bg-slate-900');
+      calBtn.classList.add('bg-red-700') ;
     }
   });
   
